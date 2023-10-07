@@ -18,7 +18,7 @@ public class CarDao {
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
             System.out.println("success in database connection");
 
@@ -37,7 +37,7 @@ public class CarDao {
 
         }
 
-
+    }
     public List<Car> findAllCars() {
 
         String SQL = "SELECT * FROM CAR";
